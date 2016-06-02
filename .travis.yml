@@ -1,7 +1,7 @@
 language: c
- compiler:
-   - gcc
-   - clang
- os: linux
+compiler:
+  - gcc
+  - clang
+os: linux
  
- script: ./autogen.sh && ./configure && make
+script: ./autogen.sh && ./configure && make
