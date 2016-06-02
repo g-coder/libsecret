@@ -7,5 +7,6 @@ os: linux
 before_install:
   - sudo apt-get install intltool
   - sudo apt-get install gtk-doc-tools
+  - sudo apt-get install gobject-introspection
 
 script: ./autogen.sh && ./configure && make
