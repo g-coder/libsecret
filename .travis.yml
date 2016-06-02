@@ -8,5 +8,8 @@ before_install:
   - sudo apt-get install intltool
   - sudo apt-get install gtk-doc-tools
   - sudo apt-get install gobject-introspection
+  - sudo apt-get install libglib2.0-dev
+  - sudo apt-get install libgpg-error-dev
+  - sudo apt-get install libgcrypt-dev
 
 script: ./autogen.sh && ./configure && make
