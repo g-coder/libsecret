@@ -3,5 +3,8 @@ compiler:
   - gcc
   - clang
 os: linux
- 
+
+before_install:
+  - sudo apt-get install intltool
+
 script: ./autogen.sh && ./configure && make
